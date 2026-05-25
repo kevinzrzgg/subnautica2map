@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #06121b;
+  --panel: rgba(10, 31, 45, 0.82);
+  --line: rgba(122, 232, 255, 0.18);
+  --cyan: #65e4ff;
+  --teal: #37f0c0;
+  --sand: #ffd28a;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at 20% 0%, rgba(25, 160, 200, .22), transparent 30%),
+    radial-gradient(circle at 90% 10%, rgba(55, 240, 192, .12), transparent 32%),
+    linear-gradient(180deg, #041019 0%, #082034 45%, #03080e 100%);
+  color: #eefbff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a { color: inherit; text-decoration: none; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: 0 20px 80px rgba(0,0,0,.25);
+}
+.badge {
+  border: 1px solid rgba(101,228,255,.3);
+  background: rgba(101,228,255,.1);
+  color: #bff5ff;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  display: inline-flex;
+}
+.map-grid {
+  background-image: linear-gradient(rgba(101,228,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(101,228,255,.08) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
